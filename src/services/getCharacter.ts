@@ -5,6 +5,7 @@ export const getCharacter = async(id: string) => {
         const characterApi =  data.amiibo[0]
         return characterApi;
     } catch(error){
-        console.log(error, "errror en el fetch de id");
+        console.error('Error en el fetch de getCharacter:', error);
+        throw new Error('Ocurrió un error al obtener el personaje de amiibo por ID');
     }
 };

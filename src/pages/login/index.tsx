@@ -1,5 +1,5 @@
 
-
+import getLogin from "@/services/getLogin"; 
 import LayoutLogin from "@/components/layouts/LayoutLogin";
 import { useRouter } from "next/router";
 
@@ -18,23 +18,20 @@ const LoginPage = () => {
 			password
 		}
 		
-		//http://localhost:3000/
-		const response = await fetch('https://ecommerce-amiibo.vercel.app/api/login', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(user)
-		});
-		
-		if(response.ok){
-			//router.push('/dashboard');
-            router.push('/');
+		try {
+			const success = await getLogin(user);
+	
+			if (success) {
+			  //router.push('/dashboard');
+				router.push('/');
+			} else {
+				alert('Usuario no válido');
+			}
+		} catch (error) {
+			console.error('Error al procesar la solicitud:', error);
+			alert('Ocurrió un error al procesar la solicitud');
 		}
-		else{
-			alert('Usuario no valido');
-		}
-	}
+	};
 
 	return (
 		<LayoutLogin title="Login" description="Login to your account">
