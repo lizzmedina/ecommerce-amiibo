@@ -1,15 +1,14 @@
 import Head from "next/head";
 import React from "react";
-import Navbar from "../common/navbar/Navbar";
 
-interface LayautProps {
+interface LayoutProps {
     title: string;
     description: string;
     keywords?: string;
     children: React.ReactNode;
 }
 
-export default function Layaut({children, title, description, keywords}: LayautProps){
+export default function LayoutLogin({children, title, description, keywords}: LayoutProps){
     return(
         <>
         <Head>
@@ -19,8 +18,7 @@ export default function Layaut({children, title, description, keywords}: LayautP
                 <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
                 <link rel="shortcut icon" href="/next.svg" type="image/x-icon"/>
             </Head>
-            <Navbar/>
-            <main>
+            <main className="flex items-center justify-center h-screen">
                 {children}
             </main>
         </>            

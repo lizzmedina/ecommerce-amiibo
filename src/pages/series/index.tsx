@@ -1,5 +1,5 @@
 
-import Layout from '@/components/layaouts/Layout';
+import Layout from '@/components/layouts/Layout';
 import { Serie } from '@/interface';
 import { getSeries } from '@/services/getSeries';
 import { NextPage, GetServerSideProps } from 'next';

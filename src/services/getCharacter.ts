@@ -1,5 +1,3 @@
-
-
 export const getCharacter = async(id: string) => {
     try {
         const response = await fetch(`https://amiiboapi.com/api/amiibo/?tail=${id}`)

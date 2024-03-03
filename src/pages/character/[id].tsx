@@ -1,5 +1,5 @@
 import Card from "@/components/common/card/Card";
-import Layaut from "@/components/layaouts/Layout";
+import Layaut from "@/components/layouts/Layout";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { getCharacter } from "@/services/getCharacter";
 import { Character } from "@/interface";

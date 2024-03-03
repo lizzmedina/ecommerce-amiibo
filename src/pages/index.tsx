@@ -1,4 +1,4 @@
-import Layaut from "@/components/layaouts/Layout";
+import Layaut from "@/components/layouts/Layout";
 import { Character } from "@/interface";
 import { homeContentEn } from "@/locale/en/home";
 import { homeContentEs } from "@/locale/es/home";
