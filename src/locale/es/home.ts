@@ -4,6 +4,7 @@ export const homeContentEs= {
         contact: "Contacto",
         cart: "Carrito",
         more: "Ver más",
-        series:  "Series"
+        series:  "Series",
+        faqs: "Preguntas frecuentes"
     }
 }

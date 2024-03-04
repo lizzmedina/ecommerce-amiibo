@@ -4,6 +4,7 @@ export const homeContentEn = {
         contact: "Contact",
         cart: "Cart",
         more: "More details",
-        series:  "Series"
+        series:  "Series",
+        faqs: "FAQs"
     }
 }

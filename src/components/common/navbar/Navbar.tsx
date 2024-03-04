@@ -41,6 +41,9 @@ export default function Navbar() {
                     <Link href="/cart">{navbar.cart}</Link>
                 </li>
                 <li>
+                    <Link href="/faqs">{navbar.faqs}</Link>
+                </li>
+                <li>
                     <button onClick={changeLanguage}>
                         { router.locale === "es" ? "EN" : "ES"}
                     </button>
